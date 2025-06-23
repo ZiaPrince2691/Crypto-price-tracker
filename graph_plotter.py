@@ -1,7 +1,7 @@
 from matplotlib import pyplot as plt
 import pandas as pd
 
-df = pd.read_csv('G:\Programming\Web Scraping\Crypto Price Tracker\Crypto-price-tracker\crypto_prices.csv')
+df = pd.read_csv('https://raw.githubusercontent.com/ZiaPrince2691/Crypto-price-tracker/refs/heads/main/crypto_prices.csv')
 
 df.plot(x='time', y='price', marker='o')
 

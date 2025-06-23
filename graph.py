@@ -1,9 +1,9 @@
 from matplotlib import pyplot as plt
 import pandas as pd
 
-df = pd.read_csv('crypto_prices.csv')
+df = pd.read_csv('G:\Programming\Web Scraping\Crypto Price Tracker\Crypto-price-tracker\crypto_prices.csv')
 
-df.plot(x='date', y='price', marker='o')
+df.plot(x='time', y='price', marker='o')
 
 plt.title("Crypto Price Tracker")
 plt.xlabel("Time")

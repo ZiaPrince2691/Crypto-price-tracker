@@ -19,6 +19,6 @@ while True:
     data = get_crypto__price_data()
     crypto_data_list.append(data)
     df = pd.DataFrame(crypto_data_list)
-    df.to_csv('Crypto-price-tracker//crypto_prices.csv')
+    df.to_csv('Crypto-price-tracker//crypto_prices.csv', index=False)
     time.sleep(60)
     print('✅ data updated .....')

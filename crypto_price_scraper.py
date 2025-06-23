@@ -12,5 +12,6 @@ def get_crypto__price_data():
             'time' : time.strftime("%d-%b-%H:%M")    }
     return data
     
-df = get_crypto__price_data()
+data = get_crypto__price_data()
+df = pd.DataFrame(data)
 df.to_csv('crypto_prices.csv', mode='a', header=False, index=False)

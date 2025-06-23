@@ -2,7 +2,7 @@ name: Update crypto price CSV
 
 on:
   schedule:
-    - cron: '*/5 * * * *'   # Every 24 hours (UTC)
+    - cron: '0 0 * * *'   # Every 24 hours (UTC)
   workflow_dispatch:          # Also allow manual trigger
 
 jobs:

@@ -9,7 +9,7 @@ def get_crypto__price_data():
     details = res.json()[0]
     data = {
             'price' : details['current_price'],
-            'time' : time.strftime("%d-%b-%H:%M")    }
+            'time' : time.strftime("%d-%b")    }
     return data
     
 data = get_crypto__price_data()

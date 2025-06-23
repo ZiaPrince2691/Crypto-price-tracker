@@ -13,5 +13,5 @@ def get_crypto__price_data():
     return data
     
 data = get_crypto__price_data()
-df = pd.DataFrame(data)
+df = pd.DataFrame([data])
 df.to_csv('crypto_prices.csv', mode='a', header=False)

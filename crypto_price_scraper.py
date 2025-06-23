@@ -11,14 +11,6 @@ def get_crypto__price_data():
             'price' : details['current_price'],
             'time' : time.strftime("%d-%b-%H:%M")    }
     return data
-
-crypto_data_list = []
-
-while True:
     
-    data = get_crypto__price_data()
-    crypto_data_list.append(data)
-    df = pd.DataFrame(crypto_data_list)
-    df.to_csv('Crypto-price-tracker//crypto_prices.csv')
-    time.sleep(60)
-    print('✅ data updated .....')
+df = get_crypto__price_data()
+df.to_csv('crypto_prices.csv', mode='a', header=False, index=False)
